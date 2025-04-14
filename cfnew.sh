@@ -15,7 +15,7 @@ TARGET_DIR="$BASE_DIR/$DIR_NAME/$PROB_NAME"
 
 # Create the problem directory
 mkdir -p "$TARGET_DIR"
-cd "$TARGET_DIR" || exit 1
+cd "$TARGET_DIR"
 
 # main.cpp template
 cat << EOF > main.cpp
@@ -52,5 +52,7 @@ run: main
 clean:
 	rm -f main
 EOF
+
+code -n .
 
 echo "Created $PROB_NAME inside $DIR_NAME with Makefile and main.cpp"
