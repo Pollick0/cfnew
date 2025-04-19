@@ -19,14 +19,7 @@ cd "$TARGET_DIR"
 
 # main.cpp template
 cat << EOF > main.cpp
-#include <iostream>
-#include <vector>
-#include <string>
-#include <set>
-#include <algorithm>
-#include <sstream>
-#include <cmath>
-#include <map>
+#include <bits/stdc++.h>
 
 int main()
 {
